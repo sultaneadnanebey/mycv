@@ -1,43 +1,50 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adnane Bey – Social Media & Content Creation Specialist</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1"> 
+  <title>Adnane BEY – SOCIAL MEDIA & CONTENT CREATION SPECIALIST</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     :root{
-      --bg:#0d0d0d;
       --accent:#00f5c3;
-      --text:#e6e6e6;
-      --muted:#8a8a8a; 
-      --card:#111;
+      --text:#ffffff;
+      --muted:#cccccc;
+      --card:rgba(0,0,0,0.60);
     }
     *{box-sizing:border-box;margin:0;font-family:'Inter',sans-serif}
-    body{background:var(--bg);color:var(--text);line-height:1.6}
-    header{
-      min-height:100vh;
-      display:flex; 
-      flex-direction:column;
-      justify-content:center;
-      align-items:center; 
-      text-align:center;
-      background:url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80") center/cover no-repeat;
+    html{scroll-behavior:smooth}
+    body{
+      color:var(--text);
+      line-height:1.7;
+      background:url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80") center top/cover fixed;
       position:relative;
     }
-    header::after{
+    body::before{ /* dim overlay */
       content:"";
-      position:absolute;
+      position:fixed;
       inset:0;
-      background:linear-gradient(160deg,#000 30%,transparent 70%);
+      background:rgba(0,0,0,0.50);
+      z-index:-1;
     }
-    header *{z-index:2}
+    header,section{
+      width:100%;
+      max-width:900px;
+      margin:auto;
+      padding:4rem 1.5rem;
+      position:relative;
+      z-index:1;
+    }
+    header{text-align:center}
     h1{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-1px}
     .tagline{font-size:1.2rem;color:var(--accent);margin-top:.5rem}
-    section{padding:4rem 1.5rem;max-width:900px;margin:auto}
-    h2{font-size:1.8rem;margin-bottom:1rem;color:var(--accent)}
-    .grid{display:grid;gap:1.5rem}
-    .card{background:var(--card);padding:1.5rem;border-radius:12px;transition:.3s}
-    .card:hover{transform:translateY(-4px)}
+    .intro{margin-top:1.5rem;font-size:1rem;color:var(--muted)}
+    h2{font-size:1.8rem;margin:3rem 0 1rem;color:var(--accent)}
+    .card{background:var(--card);padding:1.75rem;border-radius:12px;margin-bottom:2rem}
+    .card ul{margin:1rem 0 0 1.25rem}
+    .card li{margin-bottom:.5rem}
+    .edu-item{margin-bottom:2rem}
+    .edu-title{font-size:1.25rem;font-weight:600}
+    .edu-loc{font-size:.9rem;color:var(--muted)}
     .skills{display:flex;flex-wrap:wrap;gap:.5rem}
     .skills span{background:var(--accent);color:#000;padding:.3rem .7rem;border-radius:20px;font-size:.85rem;font-weight:600}
     footer{text-align:center;padding:2rem 1rem;color:var(--muted)}
@@ -46,75 +53,141 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Adnane Bey</h1>
-    <p class="tagline">Social Media & Content Creation Specialist</p>
-    <p style="margin-top:2rem">Egg Harbor Township, NJ | <a href="tel:+16098336877">+1 609-833-6877</a> | <a href="mailto:mustaphaadnanebey@gmail.com">mustaphaadnanebey@gmail.com</a></p>
-  </header>
 
-  <section>
-    <h2>Selected Work</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Marketing Manager – Immo Point Marbella</h3>
-        <p>2022-2025 | Marbella, Spain<br>
-        Managed social accounts, produced drone & gimbal property reels, created ads that generated qualified real-estate leads.</p>
-      </div>
-      <div class="card">
-        <h3>Team Manager – Gotcha Cleaning</h3>
-        <p>2023-2024 | Fuengirola, Spain<br>
-        Led daily ops & client success; built scheduling/content-calendar discipline later used for brand campaigns.</p>
-      </div>
-      <div class="card">
-        <h3>Social Media Manager – Sababa Clothing</h3>
-        <p>2021-2024 | Fuengirola, Spain<br>
-        Launched brand presence, shot product photos/reels, designed visual identity, grew local visibility & sales.</p>
-      </div>
-      <div class="card">
-        <h3>Freelance Videographer & Photographer</h3>
-        <p>Remote / On-site | Spain & Greece<br>
-        Events, tourism promos, gimbal & aerial footage—24 h delivery, 100 % positive reviews.</p>
-      </div>
-      <div class="card">
-        <h3>Travel Agency Content Creator</h3>
-        <p>2019-2021 | Sidi Bel Abbès, Algeria<br>
-        Shot tour promo photos/videos, managed social posts, coordinated groups & logistics.</p>
-      </div>
-      <div class="card">
-        <h3>Pharmacy Call Representative</h3>
-        <p>2018-2020 | Sidi Bel Abbès, Algeria<br>
-        Advised clients on promotions, followed up on health needs, boosted repeat sales.</p>
-      </div>
-    </div>
-  </section>
+<header>
+  <h1>Adnane BEY</h1>
+  <p class="tagline">SOCIAL MEDIA & CONTENT CREATION SPECIALIST</p>
+  <p class="intro">
+    Creative and results-driven Social Media & Content Specialist with experience producing high-impact videos, photography, and digital campaigns for real estate, tourism, and lifestyle brands. Skilled in videography, drone operation, gimbal stabilization, and short-form content creation. Strong ability to grow engagement, generate leads, and build brand identity. Multilingual communicator with a background in customer experience and client.
+  </p>
+  <p style="margin-top:1.5rem">Egg Harbor Township -NJ | <a href="tel:+16098336877">609-833-6877</a> | <a href="mailto:mustaphaadnanebey@gmail.com">mustaphaadnanebey@gmail.com</a></p>
+</header>
 
-  <section>
-    <h2>Skill Stack</h2>
-    <div class="skills">
-      <span>Content Strategy</span>
-      <span>Short-form Video</span>
-      <span>Drone & Gimbal Op</span>
-      <span>Photoshop / Canva / VN</span>
-      <span>Brand Storytelling</span>
-      <span>Project Management</span>
-      <span>Multilingual (EN, ES, FR, AR)</span>
-    </div>
-  </section>
+<section>
+  <h2>Work Experience</h2>
 
-  <section>
-    <h2>Languages & Education</h2>
-    <p>M.A. Didactics of Foreign Languages – English<br>
-    Certificate in Hospitality Services | Food Safety Cert.<br>
-    Google Digital Marketing Certificate</p>
-  </section>
+  <div class="card">
+    <h3>Marketing Manager – Immo Point Marbella</h3>
+    <p><strong>2022 to 2025</strong> | Marbella, Spain</p>
+    <ul>
+      <li>Managed social media accounts and increased engagement through consistent, high quality content.</li>
+      <li>Produced photography and videography for real estate listings using Professional photography equipment, gimbal, and drone equipment.</li>
+      <li>Created reels, ads, and promotional videos that generated qualified leads.</li>
+      <li>Developed content strategies to highlight property features and improve brand visibility.</li>
+      <li>Collaborated with agents to create compelling visual.</li>
+    </ul>
+  </div>
 
-  <section style="text-align:center">
-    <a href="https://sultaneadnane.my.canva.site" target="_blank" style="border:2px solid var(--accent);padding:.8rem 1.8rem;border-radius:30px;display:inline-block">View Portfolio</a>
-  </section>
+  <div class="card">
+    <h3>Team Manager – Gotcha Cleaning Service</h3>
+    <p><strong>2023 to 2024</strong> | Fuengirola, AN, Spain</p>
+    <ul>
+      <li>Led a team and coordinated operations, demonstrating strong leadership and organization.</li>
+      <li>Communicated with clients to ensure service quality and satisfaction.</li>
+      <li>Developed scheduling and planning skills useful for managing content calendars.</li>
+      <li>Strengthened problem-solving abilities in fast-paced.</li>
+    </ul>
+  </div>
 
-  <footer>
-    Built by Kimi-K2 & Adnane • 2026
-  </footer>
+  <div class="card">
+    <h3>Freelance Social Media Manager – Sababa Clothing</h3>
+    <p><strong>2021 to 2024</strong> | Fuengirola, AN, Spain</p>
+    <ul>
+      <li>Managed the launch of the brand's social media presence for a new clothing shop.</li>
+      <li>Created product photos, reels, and promotional videos to showcase new collections.</li>
+      <li>Designed visual branding and content themes to establish a consistent identity.</li>
+      <li>Increased local visibility through targeted content and community engagement.</li>
+      <li>Worked directly with the shop owner to plan campaigns and.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Freelance Videographer & Photographer</h3>
+    <p><strong>2021 to 2024</strong> | Remote / On-site | Spain & Greece</p>
+    <ul>
+      <li>Filmed and edited event videos including birthday parties, family trips, and tourism experiences.</li>
+      <li>Created promotional content for travel companies and tour operators.</li>
+      <li>Captured dynamic footage using Gimbal and Drone equipment.</li>
+      <li>Received positive client feedback for creativity, professionalism, and fast.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Customer Service & Content Creator – Travel Agency / Hiking and Camping Club</h3>
+    <p><strong>2019 to 2021</strong> | Sidi Bel Abbès, Algeria</p>
+    <ul>
+      <li>Created promotional content for tours and excursions, including photos, videos, and social media posts.</li>
+      <li>Supported logistics and group coordination during travel.</li>
+      <li>Organized tours and excursions, ensuring group safety.</li>
+      <li>Managed advertising and customer communication to increase.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Pharmacy Call Representative – Pharmacie Makam</h3>
+    <p><strong>2018 to 2020</strong> | Sidi Bel Abbès, Algeria</p>
+    <ul>
+      <li>Informed clients about ongoing promotions and provided details on pharmaceutical products.</li>
+      <li>Followed up on clients' health conditions to ensure their needs were met and offered personalized.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education & Certificates</h2>
+
+  <div class="card edu-item">
+    <div class="edu-title">Master’s Degree in Didactics of Foreign Languages – English</div>
+    <div class="edu-loc">2016 – 2021 | University Djillali Liabés, Sidi Bel Abbès, Algeria</div>
+  </div>
+
+  <div class="card edu-item">
+    <div class="edu-title">Certificate in Hospitality Services</div>
+    <div class="edu-loc">2024 | Maude studio, Málaga, Spain</div>
+  </div>
+
+  <div class="card edu-item">
+    <div class="edu-title">Food Safety Certification</div>
+    <div class="edu-loc">May 2024 | Maude Studios, Málaga, Spain</div>
+  </div>
+
+  <div class="card edu-item">
+    <div class="edu-title">Fundamentals of Digital Marketing Certification</div>
+    <div class="edu-loc">2018 | Google Digital Learning (Remote)</div>
+  </div>
+</section>
+
+<section>
+  <h2>Core Skills</h2>
+  <div class="skills">
+    <span>Content creation</span>
+    <span>Brand storytelling</span>
+    <span>Project management</span>
+    <span>Social media strategy</span>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Photoshop, Canva, VN</span>
+    <span>Photography & videography</span>
+    <span>Drone & gimbal operation</span>
+    <span>Tech-Savvy</span>
+  </div>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <p>English • Spanish • French • Arabic</p>
+</section>
+
+<section style="text-align:center">
+  <a href="https://sultaneadnane.my.canva.site" target="_blank" style="border:2px solid var(--accent);padding:.8rem 1.8rem;border-radius:30px;display:inline-block">Portfolio</a>
+</section>
+
+<footer>
+  Adnane BEY – 2026
+</footer>
 </body>
 </html>
-
