@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adnane Bey – Social Media & Content Creation Specialist</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#0d0d0d;
+      --accent:#00f5c3;
+      --text:#e6e6e6;
+      --muted:#8a8a8a;
+      --card:#111;
+    }
+    *{box-sizing:border-box;margin:0;font-family:'Inter',sans-serif}
+    body{background:var(--bg);color:var(--text);line-height:1.6}
+    header{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:url("hero.jpg") center/cover no-repeat,linear-gradient(160deg,#000 30%,transparent 70%);
+    }
+    header *{z-index:2}
+    h1{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-1px}
+    .tagline{font-size:1.2rem;color:var(--accent);margin-top:.5rem}
+    section{padding:4rem 1.5rem;max-width:900px;margin:auto}
+    h2{font-size:1.8rem;margin-bottom:1rem;color:var(--accent)}
+    .grid{display:grid;gap:1.5rem}
+    .card{background:var(--card);padding:1.5rem;border-radius:12px;transition:.3s}
+    .card:hover{transform:translateY(-4px)}
+    .skills{display:flex;flex-wrap:wrap;gap:.5rem}
+    .skills span{background:var(--accent);color:#000;padding:.3rem .7rem;border-radius:20px;font-size:.85rem;font-weight:600}
+    footer{text-align:center;padding:2rem 1rem;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none}
+    @media print{body{background:#fff;color:#000}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adnane Bey</h1>
+    <p class="tagline">Social Media & Content Creation Specialist</p>
+    <p style="margin-top:2rem">Egg Harbor Township, NJ | <a href="tel:+16098336877">+1 609-833-6877</a> | <a href="mailto:mustaphaadnanebey@gmail.com">mustaphaadnanebey@gmail.com</a></p>
+  </header>
+
+  <section>
+    <h2>Selected Work</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Marketing Manager – Immo Point Marbella</h3>
+        <p>2022-2025 | Marbella, Spain<br>
+        Grew social engagement via reels & drone property tours; generated qualified real-estate leads.</p>
+      </div>
+      <div class="card">
+        <h3>Team Manager – Gotcha Cleaning</h3>
+        <p>2023-2024 | Fuengirola, Spain<br>
+        Led ops & client success; built content-calendar discipline that later powered brand campaigns.</p>
+      </div>
+      <div class="card">
+        <h3>Freelance Videographer & Photographer</h3>
+        <p>Remote / On-site | Spain & Greece<br>
+        Events, tourism promos, gimbal & aerial footage—delivered in 24 h, 100 % positive reviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skill Stack</h2>
+    <div class="skills">
+      <span>Content Strategy</span>
+      <span>Short-form Video</span>
+      <span>Drone & Gimbal Op</span>
+      <span>Photoshop / Canva / VN</span>
+      <span>Brand Storytelling</span>
+      <span>Project Management</span>
+      <span>Multilingual (EN, ES, FR, AR)</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Languages & Education</h2>
+    <p>M.A. Didactics of Foreign Languages – English<br>
+    Google Digital Marketing Cert. | Food Safety & Hospitality Certs.</p>
+  </section>
+
+  <section style="text-align:center">
+    <a href="https://sultaneadnane.my.canva.site" target="_blank" style="border:2px solid var(--accent);padding:.8rem 1.8rem;border-radius:30px;display:inline-block">View Portfolio</a>
+  </section>
+
+  <footer>
+    Built by Kimi-K2 & Adnane • 2026
+  </footer>
+</body>
+</html>
